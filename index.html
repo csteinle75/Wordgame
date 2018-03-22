@@ -3,16 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Wordgame</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<!-- Body Content -->
 	<div id="gameContainer">
 		<h1 id="gameTitle">Word Game</h1>
-		<button id="newGame">New Game(currently doing nothing)</button>
+		<button id="newGame">New Word</button>
 		<h2 id="turnCounter">Guesses remaining: 8</h2>
-		<h3 id="message">Guess a Letter</h3>
-		<p id="mysteryWord">_ _ _ _ _</p> <!-- an array joined by spaces -->
+		<h3 id="message">Click the New Word button to start game</h3>
+		<p id="mysteryWord">It is a Mystery</p> <!-- an array joined by spaces -->
 		<p id="guessedLetters">Guessed Letters: </p> <!-- another array, sorted alphabetically and joined by spaces -->
 		<form>
 			<input type="text" name="guess" id="guess" placeholder="Enter a letter" maxlength="1" /> <!-- limit to 1 char a-z-->
