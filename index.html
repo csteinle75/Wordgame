@@ -9,11 +9,13 @@
 	<!-- Body Content -->
 	<div id="gameContainer">
 		<h1 id="gameTitle">Word Game</h1>
+		<button id="newGame">New Game(currently doing nothing)</button>
 		<h2 id="turnCounter">Guesses remaining: 8</h2>
+		<h3 id="message">Guess a Letter</h3>
 		<p id="mysteryWord">_ _ _ _ _</p> <!-- an array joined by spaces -->
-		<p id="guessedLetters">A B L Y</p> <!-- another array, sorted alphabetically and joined by spaces -->
+		<p id="guessedLetters">Guessed Letters: </p> <!-- another array, sorted alphabetically and joined by spaces -->
 		<form>
-			<input type="text" name="guess" id="guess" placeholder="Enter a letter" /> <!-- limit to 1 char a-z-->
+			<input type="text" name="guess" id="guess" placeholder="Enter a letter" maxlength="1" /> <!-- limit to 1 char a-z-->
 			<button id="submit">Submit Guess</button>
 		</form>
 	</div>
