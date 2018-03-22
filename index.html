@@ -6,10 +6,25 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+	<!-- Body Content -->
+	<div id="gameContainer">
+		<h1 id="gameTitle">Word Game</h1>
+		<button id="newGame">New Game(currently doing nothing)</button>
+		<h2 id="turnCounter">Guesses remaining: 8</h2>
+		<h3 id="message">Guess a Letter</h3>
+		<p id="mysteryWord">_ _ _ _ _</p> <!-- an array joined by spaces -->
+		<p id="guessedLetters">Guessed Letters: </p> <!-- another array, sorted alphabetically and joined by spaces -->
+		<form>
+			<input type="text" name="guess" id="guess" placeholder="Enter a letter" maxlength="1" /> <!-- limit to 1 char a-z-->
+			<button id="submit">Submit Guess</button>
+		</form>
+	</div>
+	<!-- Scripts -->
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="common-words.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
