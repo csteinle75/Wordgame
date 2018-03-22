@@ -64,7 +64,6 @@ class Hangman {
 
 
 	gamestate(){
-		console.log('Answer: ' + this.word, " Display: " + this.displaySplit.join(''))
 		if(this.turns >= 0 && this.word === this.displaySplit.join('')){
 			this._status = 'end'
 			$("#message").text('Winner!')
